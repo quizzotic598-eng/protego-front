@@ -1,0 +1,171 @@
+/* Login Component Styles */
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, hsl(211, 95%, 45%) 0%, hsl(211, 95%, 35%) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 28rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.logoIcon {
+  width: 2rem;
+  height: 2rem;
+  color: white;
+}
+
+.title {
+  font-size: 1.875rem;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+}
+
+.cardHeader {
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cardDescription {
+  color: hsl(215, 16%, 47%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.inputWrapper {
+  position: relative;
+}
+
+.inputIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  width: 1rem;
+  height: 1rem;
+  color: hsl(215, 16%, 47%);
+}
+
+.input {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid hsl(215, 25%, 88%);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  transition: border-color 0.2s;
+}
+
+.input:focus {
+  outline: none;
+  border-color: hsl(211, 95%, 45%);
+  box-shadow: 0 0 0 3px hsl(211, 95%, 45%, 0.1);
+}
+
+.select {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid hsl(215, 25%, 88%);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background: white;
+  transition: border-color 0.2s;
+}
+
+.select:focus {
+  outline: none;
+  border-color: hsl(211, 95%, 45%);
+  box-shadow: 0 0 0 3px hsl(211, 95%, 45%, 0.1);
+}
+
+.submitButton {
+  width: 100%;
+  background: linear-gradient(135deg, hsl(211, 95%, 45%), hsl(211, 95%, 55%));
+  color: white;
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.submitButton:hover {
+  opacity: 0.9;
+}
+
+.demoCredentials {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: hsl(215, 25%, 95%);
+  border-radius: 0.5rem;
+}
+
+.demoTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.demoList {
+  font-size: 0.875rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.demoNote {
+  color: hsl(215, 16%, 47%);
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}

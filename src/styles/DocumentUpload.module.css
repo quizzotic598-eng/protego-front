@@ -1,0 +1,170 @@
+/* Document Upload Component Styles */
+.container {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.header {
+  padding: 1.5rem;
+  border-bottom: 1px solid hsl(215, 25%, 88%);
+}
+
+.headerTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.headerDescription {
+  color: hsl(215, 16%, 47%);
+  font-size: 0.875rem;
+}
+
+.content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dropZone {
+  border: 2px dashed hsl(215, 25%, 70%);
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.dropZone:hover,
+.dropZoneActive {
+  border-color: hsl(211, 95%, 45%);
+  background: hsl(211, 95%, 45%, 0.05);
+}
+
+.dropZoneIcon {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto 1rem;
+  color: hsl(215, 16%, 47%);
+}
+
+.dropZoneTitle {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.dropZoneDescription {
+  font-size: 0.875rem;
+  color: hsl(215, 16%, 47%);
+  margin-bottom: 1rem;
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.browseButton {
+  background: transparent;
+  color: hsl(211, 95%, 45%);
+  border: 1px solid hsl(211, 95%, 45%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.browseButton:hover {
+  background: hsl(211, 95%, 45%);
+  color: white;
+}
+
+.filesList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.filesHeader {
+  font-weight: 500;
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.filesContainer {
+  max-height: 10rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.fileItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background: hsl(215, 25%, 95%);
+  border-radius: 0.375rem;
+}
+
+.fileInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fileName {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.fileSize {
+  font-size: 0.75rem;
+  color: hsl(215, 16%, 47%);
+}
+
+.removeFileButton {
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  color: hsl(215, 16%, 47%);
+  transition: color 0.2s;
+}
+
+.removeFileButton:hover {
+  color: hsl(0, 84%, 60%);
+}
+
+.uploadButton {
+  width: 100%;
+  background: hsl(211, 95%, 45%);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: background 0.2s;
+}
+
+.uploadButton:hover:not(:disabled) {
+  background: hsl(211, 95%, 40%);
+}
+
+.uploadButton:disabled {
+  background: hsl(215, 25%, 70%);
+  cursor: not-allowed;
+}

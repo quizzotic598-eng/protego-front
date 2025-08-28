@@ -4,8 +4,8 @@ import Login from '../components/Login';
 import CustomerDashboard from '../components/CustomerDashboard';
 import AgentDashboard from '../components/AgentDashboard';
 import AdminDashboard from '../components/AdminDashboard';
-import { Button } from '../components/ui/button';
 import { LogOut } from 'lucide-react';
+import styles from '../styles/Dashboard.module.css';
 
 const Index = () => {
   const { isAuthenticated, user } = useAppSelector(state => state.auth);
@@ -33,18 +33,16 @@ const Index = () => {
   };
 
   return (
-    <div className="relative">
+    <div style={{ position: 'relative' }}>
       {/* Logout Button */}
-      <div className="fixed top-4 right-4 z-50">
-        <Button 
-          variant="outline" 
-          size="sm" 
+      <div className={styles.logoutButton}>
+        <button 
+          className={`${styles.button} ${styles.buttonSecondary}`}
           onClick={handleLogout}
-          className="bg-white/90 backdrop-blur shadow-card"
         >
-          <LogOut className="w-4 h-4 mr-2" />
+          <LogOut style={{ width: '1rem', height: '1rem', marginRight: '0.5rem' }} />
           Logout
-        </Button>
+        </button>
       </div>
       
       {renderDashboard()}

@@ -1,0 +1,290 @@
+/* Dashboard Common Styles */
+.container {
+  min-height: 100vh;
+  background: hsl(217, 33%, 97%);
+}
+
+.header {
+  background: linear-gradient(135deg, hsl(211, 95%, 45%) 0%, hsl(211, 95%, 35%) 100%);
+  color: white;
+  padding: 1.5rem;
+}
+
+.headerContent {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+.headerTitle {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.headerSubtitle {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.main {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.searchContainer {
+  margin-bottom: 1.5rem;
+}
+
+.searchWrapper {
+  position: relative;
+  max-width: 28rem;
+}
+
+.searchIcon {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.75rem;
+  width: 1rem;
+  height: 1rem;
+  color: hsl(215, 16%, 47%);
+}
+
+.searchInput {
+  width: 100%;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  border: 1px solid hsl(215, 25%, 88%);
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  background: white;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: hsl(211, 95%, 45%);
+  box-shadow: 0 0 0 3px hsl(211, 95%, 45%, 0.1);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.statCard {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.statCardContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.statInfo h3 {
+  font-size: 0.875rem;
+  color: hsl(215, 16%, 47%);
+  margin-bottom: 0.5rem;
+}
+
+.statInfo p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(217, 33%, 11%);
+}
+
+.statIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.tabs {
+  margin-top: 1.5rem;
+}
+
+.tabsList {
+  display: flex;
+  background: hsl(215, 25%, 95%);
+  border-radius: 0.5rem;
+  padding: 0.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.tabsTrigger {
+  flex: 1;
+  padding: 0.75rem 1rem;
+  border: none;
+  background: transparent;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.tabsTrigger.active {
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.tabsContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+.cardHeader {
+  padding: 1.5rem;
+  border-bottom: 1px solid hsl(215, 25%, 88%);
+}
+
+.cardHeaderContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cardTitle {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.cardDescription {
+  color: hsl(215, 16%, 47%);
+  font-size: 0.875rem;
+}
+
+.cardContent {
+  padding: 1.5rem;
+}
+
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cardGridItem h4 {
+  font-size: 0.875rem;
+  color: hsl(215, 16%, 47%);
+  margin-bottom: 0.25rem;
+}
+
+.cardGridItem p {
+  font-weight: 600;
+}
+
+.cardActions {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.buttonPrimary {
+  background: hsl(211, 95%, 45%);
+  color: white;
+  border: none;
+}
+
+.buttonPrimary:hover {
+  background: hsl(211, 95%, 40%);
+}
+
+.buttonSecondary {
+  background: transparent;
+  color: hsl(217, 33%, 11%);
+  border: 1px solid hsl(215, 25%, 88%);
+}
+
+.buttonSecondary:hover {
+  background: hsl(215, 25%, 95%);
+}
+
+.buttonSuccess {
+  background: hsl(142, 76%, 36%);
+  color: white;
+  border: none;
+}
+
+.buttonSuccess:hover {
+  background: hsl(142, 76%, 31%);
+}
+
+.buttonDestructive {
+  background: hsl(0, 84%, 60%);
+  color: white;
+  border: none;
+}
+
+.buttonDestructive:hover {
+  background: hsl(0, 84%, 55%);
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badgeSuccess {
+  background: hsl(142, 76%, 36%);
+  color: white;
+}
+
+.badgeWarning {
+  background: hsl(48, 100%, 50%);
+  color: hsl(217, 33%, 11%);
+}
+
+.badgeDestructive {
+  background: hsl(0, 84%, 60%);
+  color: white;
+}
+
+.badgeDefault {
+  background: hsl(215, 25%, 95%);
+  color: hsl(215, 16%, 47%);
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.logoutButton {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  border: 1px solid hsl(215, 25%, 88%);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
